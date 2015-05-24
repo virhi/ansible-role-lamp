@@ -1,8 +1,8 @@
 ---
 dependencies:
-  - required-role/virhi.mysql
-  - required-role/virhi.php
-  - { role: required-role/virhi.apache, ws_vhost_env: prod, servername: prod.vansible.local }
+  - virhi.mysql
+  - virhi.php
+  - { role: virhi.apache, ws_vhost_env: prod, servername: prod.vansible.local }
 
 galaxy_info:
   author: virhi
