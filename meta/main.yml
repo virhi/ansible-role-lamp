@@ -1,0 +1,23 @@
+---
+dependencies:
+  - required-role/virhi.mysql
+  - required-role/virhi.php
+  - { role: required-role/virhi.apache, ws_vhost_env: prod, servername: prod.vansible.local }
+
+galaxy_info:
+  author: virhi
+  description: LAMP for Debian/Ubuntu.
+  license: "license (MIT)"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - precise
+    - raring
+    - saucy
+    - trusty
+  categories:
+    - web
